@@ -22,9 +22,18 @@ const SearchScreen = () => {
                 />
                 {errorMessage ? <Text>{errorMessage}</Text> : null}
                 <ScrollView>
-                    <RestaurantsList restaurants={filterRestaurantsByPrice("£")} title={"Cost Effective"} />
-                    <RestaurantsList restaurants={filterRestaurantsByPrice("££")} title={"Bit Pricier"} />
-                    <RestaurantsList restaurants={filterRestaurantsByPrice("£££")} title={"Big Spender"} />
+                    <RestaurantsList
+                        restaurants={filterRestaurantsByPrice("£")}
+                        title={"Cost Effective"}
+                    />
+                    <RestaurantsList
+                        restaurants={filterRestaurantsByPrice("££")}
+                        title={"Bit Pricier"}
+                    />
+                    <RestaurantsList
+                        restaurants={filterRestaurantsByPrice("£££")}
+                        title={"Big Spender"}
+                    />
                 </ScrollView>
             </View>
         </>
