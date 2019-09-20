@@ -25,4 +25,5 @@ export default () => {
     searchApi('Pasta');
   }, [])
 
+  return [searchApi, restaurants, errorMessage];
 }
